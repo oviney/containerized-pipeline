@@ -21,4 +21,5 @@ Everything obviously will be running on Docker, as it is the easiest way of depl
 So, let’s see how to run Jenkins on Docker:
 
 > Grab the latest LTS
+
 `docker pull jenkins/jenkins:lts`
