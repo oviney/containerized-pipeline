@@ -31,3 +31,13 @@ Default Jenkins comes quite bare.  So we'll demonstrate how we can automate plug
 * Set up manually
 * Set up programmatically
 * Automate with Docker
+
+The Docker Jenkins image we are downloading is ~700MB. I will take you through the additional steps to setup up build a pipeline for a Java project. Let’s add them to the list and look closer later:
+
+* Pull the code from SCM
+* Configuration of Java and Maven
+* Running unit tests
+* Running static analysis
+* Sending report to SonarQube for further processing
+* And finally, deployment of the .jar file to the repository (e.g. Nexus repo.  Will be covered in the next tutorial)
+* Optional: release it after each commit
