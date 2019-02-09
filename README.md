@@ -4,12 +4,12 @@ Dockerizing Jenkins, learn to run Jenkins on Docker, and automate plugin install
 # Scope of Tutorial
 In this tutorial, I am going to demonstrate:
 
-* Running Jenkins on Docker.
-* Automation of Jenkins plugin installation on Docker.
-* Configuring Java and Maven tools on Jenkins, first manually and then via the Groovy scripts.
-* Automating the above step with Docker.
-* Running SonarQube on Docker.
-* Setting up a Java Maven pipeline with unit tests, test coverage, and SonarQube analysis steps.
+* Running Jenkins on Docker
+* Automation of Jenkins plugin installation on Docker
+* Configuring Java and Maven tools on Jenkins, first manually and then via the Groovy scripts
+* Automating the above step with Docker
+* Running SonarQube on Docker
+* Setting up a Java Maven pipeline with unit tests, test coverage, and SonarQube analysis steps
 
 # Let's get started
 This will be a hands on tutorial, so be ready to get your hands dirty.  By the end, you should be able to run the pipeline on a fully automated Jenkins Docker container.
@@ -23,3 +23,11 @@ So, let’s see how to run Jenkins on Docker:
 > Grab the latest LTS
 
 `docker pull jenkins/jenkins:lts`
+
+While it is downloading in the background, let’s review what we are going to do with the Docker Jenkins container once it is done.
+
+Default Jenkins comes quite bare.  So we'll demonstrate how we can automate plugin installation in the Docker image we are going to build and will follow this simple rule (automate everything) throughout all the steps:
+
+* Set up manually
+* Set up programmatically
+* Automate with Docker
