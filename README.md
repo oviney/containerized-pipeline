@@ -41,3 +41,11 @@ The Docker Jenkins image we are downloading is ~700MB. I will take you through t
 * Sending report to SonarQube for further processing
 * And finally, deployment of the .jar file to the repository (e.g. Nexus repo.  Will be covered in the next tutorial)
 * Optional: release it after each commit
+
+^ Once you have your image downloaded, let’s run the container:
+
+`docker run -p 8080:8080 --rm --name myjenkins jenkins/jenkins:lts`
+
+**Note:** I used a specific tag; I am using the latest LTS tag, I want the version to always be the latest LTS version.
+
+**Note:** We name the container `--name myjenkins`  so it is easier to refer to it later, otherwise, Docker will name it randomly, and we added the `–-rm` flag to delete the container once we stop it.  This will ensure we are running Jenkins in an immutable fashion and everything configures on the fly.  If we want to preserve any data, we will do it explicitly.
