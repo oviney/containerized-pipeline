@@ -46,9 +46,9 @@ The Docker Jenkins image we are downloading is ~700MB. I will take you through t
 
 `docker run -p 8080:8080 --rm --name myjenkins jenkins/jenkins:lts`
 
-**Note:** I used a specific tag; I am using the latest LTS tag, I want the version to always be the latest LTS version.
+> I used a specific tag; I am using the latest LTS tag, I want the version to always be the latest LTS version.
 
-**Note:** We name the container `--name myjenkins`  so it is easier to refer to it later, otherwise, Docker will name it randomly, and we added the `–-rm` flag to delete the container once we stop it.  This will ensure we are running Jenkins in an immutable fashion and everything configures on the fly.  If we want to preserve any data, we will do it explicitly.
+> We name the container `--name myjenkins`  so it is easier to refer to it later, otherwise, Docker will name it randomly, and we added the `–-rm` flag to delete the container once we stop it.  This will ensure we are running Jenkins in an immutable fashion and everything configures on the fly.  If we want to preserve any data, we will do it explicitly.
 
 We won't need to worry about setting an admin password.  This was automated in the Docker file.
 
@@ -102,3 +102,9 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/jenkins-plugins.t
 > Time to build our image:
 
 ```docker build -t myjenkins .```
+
+> The dot `.` in the end, don’t miss it.  It will take a while as now the Docker Jenkins image has been instructed to download and install the plugins we defined in jenkins-plugins.txt (use the `jenkins-utils.py`). Once it is ready, we can run it:
+
+```docker run -p 8080:8080 --rm --name myjenkins myjenkins:latest```
+
+Please note that this time we are running the container not from the default image, but the one we have just baked. You can check installed plugins by running the same script we did or just in the UI:
