@@ -107,7 +107,7 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/jenkins-plugins.t
 
 ```docker run -p 8080:8080 --rm --name myjenkins myjenkins:latest```
 
-Please note that this time we are running the container not from the default image, but the one we have just baked. You can check installed plugins by running the same script I did (`jenkins-utils.py`):
+> This time we are not running the container from the default image, but the one we have just built. You can check installed plugins by running the same script I did (`jenkins-utils.py`):
 
 ```Python
 import json
@@ -173,3 +173,23 @@ time.sleep(60)
 # List plugins installed in local Jenkins Docker container
 print("Plugins installed in local Jenkins Docker container: {0}".format(list_jenkins_plugins(server)))
 ```
+
+To just get the installe plugins you can run it like this:
+
+```Python
+
+# List plugins installed in local Jenkins Docker container
+print("Plugins installed in local Jenkins Docker container: {0}".format(list_jenkins_plugins(server)))
+```
+
+The output will be something like this:
+
+```Python
+
+[Running] python -u "c:\Users\Ouray.Viney\docker-dev-work\jenkins-docker-pipeline-tutorial\jenkins-utils.py"
+Total number of installed Jenkins plugins in local running container: 74
+Plugins installed in local Jenkins Docker container: ['cloudbees-folder', 'plain-credentials', 'jsch', 'subversion', 'docker-workflow', 'pipeline-stage-view', 'pipeline-model-declarative-agent', 'git-client', 'workflow-aggregator', 'script-security', 'pipeline-model-extensions', 'bouncycastle-api', 'build-timeout', 'ant', 'branch-api', 'structs', 'durable-task', 'pipeline-graph-analysis', 'workflow-cps-global-lib', 'authentication-tokens', 'github', 'momentjs', 'apache-httpcomponents-client-4-api', 'pipeline-build-step', 'github-branch-source', 'scm-api', 'credentials-binding', 'pipeline-stage-tags-metadata', 'jackson2-api', 'cobertura', 'junit', 'pipeline-input-step', 'gradle', 'antisamy-markup-formatter', 'workflow-basic-steps', 'pipeline-rest-api', 'pipeline-github-lib', 'pam-auth', 'github-api', 'display-url-api', 'ace-editor', 'credentials', 'workflow-multibranch', 'timestamper', 'pipeline-stage-step', 'docker-commons', 'mapdb-api', 'workflow-step-api', 'resource-disposer', 'git-server', 'ssh-slaves', 'workflow-scm-step', 'ldap', 'handlebars', 'workflow-api', 'ssh-credentials', 'email-ext', 'workflow-job', 'pipeline-model-api', 'ws-cleanup', 'pipeline-milestone-step', 'jquery-detached', 'windows-slaves', 'pipeline-model-definition', 'git', 'matrix-auth', 'lockable-resources', 'token-macro', 'workflow-support', 'mailer', 'workflow-cps', 'matrix-project', 'code-coverage-api', 'workflow-durable-task-step']
+
+[Done] exited with code=0 in 0.906 seconds
+```
+
