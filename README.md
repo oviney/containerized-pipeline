@@ -212,3 +212,31 @@ In the JDK section, we will configure Jenkins to use the Java 8 version we insta
 In the Maven section, we will configure Jenkins to use the Maven version we installed in Docker.
 
 ![Image of Maven configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-04-38.png)
+
+Now we can check if our tools are configured correctly in Jenkins. Let's start by creating a Jenkins job and set up its type to the pipeline and start writing our code:
+
+![Image of Pipeline configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-04-38.png)
+
+```
+pipeline {
+    agent any
+    tools {
+        jdk 'java-8-openjdk-amd64'
+        maven 'Maven'
+    }
+    stages {
+        stage('test java installation') {
+            steps {
+                sh 'java -version'
+                sh 'which java'
+            }
+        }
+        stage('test maven installation') {
+            steps {
+                sh 'mvn -version'
+                sh 'which mvn'
+            }
+        }
+    }
+}
+```
