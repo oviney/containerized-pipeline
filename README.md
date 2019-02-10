@@ -62,4 +62,46 @@ That said, we only use the trick once we have installed the recommended Jenkins 
 
 `docker stop myjenkins`
 
+> Let’s start Dockerizing the Jenkins plugin, Java installation part now by creating an empty file called Dockerfile and adding couple lines to it:
+
+`
+FROM jenkins/jenkins:lts
+
+LABEL maintainer="Ouray Viney"
+
+# Get rid of admin password setup
+ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
+
+# If we want to install via apt
+USER root
+
+# COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+# RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
+
+# Install OpenJDK-8
+RUN apt-get update && \
+    apt-get install -y openjdk-8-jdk && \
+    apt-get install -y python && \ 
+    apt-get install -y ant && \
+    apt-get clean;
+
+# Fix certificate issues
+RUN apt-get update && \
+    apt-get install ca-certificates-java && \
+    apt-get clean && \
+    update-ca-certificates -f;
+
+# Setup JAVA_HOME -- useful for docker commandline
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
+RUN export JAVA_HOME
+
+# Install Jenkins plugins
+COPY jenkins-plugins.txt /tmp
+COPY jenkins-utils.py /tmp
+COPY __init__.py /tmp
+COPY plugins.py /tmp
+COPY version.py /tmp
+RUN /tmp/jenkins-utils.py
+`
+
 
