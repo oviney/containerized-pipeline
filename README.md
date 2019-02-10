@@ -202,3 +202,13 @@ RUN apt-get update && \
     apt-get install -y openjdk-8-jdk maven && \
     apt-get clean;
 ```
+
+We are now ready to configure the tools.  Let open our browser and navigate to http://localhost:8080/configureTools/.  Then choose Manage Jenkins -> Global Tool Configuration.
+
+In the JDK section, we will configure Jenkins to use the Java 8 version we installed in Docker.
+
+> add screenshot here
+
+In the Maven section, we will configure Jenkins to use the Maven version we installed in Docker.
+
+> add screenshot here
