@@ -193,3 +193,12 @@ Plugins installed in local Jenkins Docker container: ['cloudbees-folder', 'plain
 [Done] exited with code=0 in 0.906 seconds
 ```
 
+# Tool Installation
+We have already installed Java and Apache Maven, so that is covered.  That is done in the Docker file, here is the code:
+
+```Docker
+# Install OpenJDK-8
+RUN apt-get update && \
+    apt-get install -y openjdk-8-jdk maven && \
+    apt-get clean;
+```
