@@ -56,7 +56,7 @@ We won't need to worry about setting an admin password.  This was automated in t
 
 `ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"`
 
-That said, we only use the trick once we have installed the recommended Jenkins plugins.  You do this the first time manually by navigating to http://127.0.0.1.  We extract the default list of plugins using a Pythong script.  In the Python script I use a Jenkins module that lets you send Groovy scripts via HTTP using the requests libray.  I decide to take this approach when I discovered that Jenkins doesn't have a REST interface for this types of tasks.  The Python script sends a request to your Jenkins container, gets a list of the installed Jenkins plugins and writes it to disk.  Then, sends a request to your Jenkins container, installing all the desired plugins.
+That said, we only use the trick once we have installed the recommended Jenkins plugins.  You do this the first time manually by navigating to http://127.0.0.1.  We can you use Python to extract the default list of plugins.  In the Python script I import a Jenkins module (python-jenkins) that lets you send Groovy scripts via HTTP using the requests libray.  I decided to take this approach when I discovered that Jenkins doesn't have a REST interface for these types of tasks.  I didn't want to use curl or wget as Windows doesn't typically have those tools available.  The Python script sends a request to your Jenkins container, gets a list of the installed Jenkins plugins and writes it to disk.  Then, sends a request to your Jenkins container, installing all the desired plugins.  Since I have done that already, you won't need to use the Python script.  
 
 > Let’s stop the container and automate this step:
 
@@ -99,4 +99,6 @@ COPY jenkins-plugins.txt /usr/share/jenkins/ref/jenkins-plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/jenkins-plugins.txt
 ```
 
+> Time to build our image:
 
+```docker build -t myjenkins .```
