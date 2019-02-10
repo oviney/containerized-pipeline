@@ -64,8 +64,7 @@ That said, we only use the trick once we have installed the recommended Jenkins 
 
 > Let’s start Dockerizing the Jenkins plugin, Java installation part now by creating an empty file called Dockerfile and adding couple lines to it:
 
-`
-FROM jenkins/jenkins:lts
+```FROM jenkins/jenkins:lts
 
 LABEL maintainer="Ouray Viney"
 
@@ -102,6 +101,6 @@ COPY __init__.py /tmp
 COPY plugins.py /tmp
 COPY version.py /tmp
 RUN /tmp/jenkins-utils.py
-`
+```
 
 
