@@ -58,6 +58,8 @@ We won't need to worry about setting an admin password.  This was automated in t
 
 That said, we only use the trick once we have installed the recommended Jenkins plugins.  You do this the first time manually by navigating to http://127.0.0.1.  We extract the default list of plugins using a Pythong script.  In the Python script I use a Jenkins module that lets you send Groovy scripts via HTTP using the requests libray.  I decide to take this approach when I discovered that Jenkins doesn't have a REST interface for this types of tasks.  The Python script sends a request to your Jenkins container, gets a list of the installed Jenkins plugins and writes it to disk.  Then, sends a request to your Jenkins container, installing all the desired plugins.
 
+> Let’s stop the container and automate this step:
 
+`docker stop myjenkins`
 
 
