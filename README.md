@@ -94,13 +94,9 @@ RUN apt-get update && \
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
-# Install Jenkins plugins
-COPY jenkins-plugins.txt /tmp
-COPY jenkins-utils.py /tmp
-COPY __init__.py /tmp
-COPY plugins.py /tmp
-COPY version.py /tmp
-RUN /tmp/jenkins-utils.py
+# Auto install Jenkins plugins
+COPY jenkins-plugins.txt /usr/share/jenkins/ref/jenkins-plugins.txt
+RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/jenkins-plugins.txt
 ```
 
 
