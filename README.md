@@ -42,10 +42,22 @@ The Docker Jenkins image we are downloading is ~700MB. I will take you through t
 * And finally, deployment of the .jar file to the repository (e.g. Nexus repo.  Will be covered in the next tutorial)
 * Optional: release it after each commit
 
-^ Once you have your image downloaded, let’s run the container:
+> Once you have your image downloaded, let’s run the container:
 
 `docker run -p 8080:8080 --rm --name myjenkins jenkins/jenkins:lts`
 
 **Note:** I used a specific tag; I am using the latest LTS tag, I want the version to always be the latest LTS version.
 
 **Note:** We name the container `--name myjenkins`  so it is easier to refer to it later, otherwise, Docker will name it randomly, and we added the `–-rm` flag to delete the container once we stop it.  This will ensure we are running Jenkins in an immutable fashion and everything configures on the fly.  If we want to preserve any data, we will do it explicitly.
+
+We won't need to worry about setting an admin password.  This was automated in the Docker file.
+
+> Get rid of admin password setup
+
+`ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"`
+
+That said, we only use the trick once we have installed the recommended Jenkins plugins.  You do this the first time manually by navigating to http://127.0.0.1.  We extract the default list of plugins using a Pythong script.  In the Python script I use a Jenkins module that lets you send Groovy scripts via HTTP using the requests libray.  I decide to take this approach when I discovered that Jenkins doesn't have a REST interface for this types of tasks.  The Python script sends a request to your Jenkins container, gets a list of the installed Jenkins plugins and writes it to disk.  Then, sends a request to your Jenkins container, installing all the desired plugins.
+
+
+
+
