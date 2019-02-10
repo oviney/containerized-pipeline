@@ -207,8 +207,8 @@ We are now ready to configure the tools.  Let open our browser and navigate to h
 
 In the JDK section, we will configure Jenkins to use the Java 8 version we installed in Docker.
 
-![Image of Java configuration in Jenkins](containerized-pipeline/2019-02-10_13-04-38.png)      
+![Image of Java configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-04-38.png)      
 
 In the Maven section, we will configure Jenkins to use the Maven version we installed in Docker.
 
-![Image of Maven configuration in Jenkins](https://github.com/oviney/containerized-pipeline/2019-02-10_13-04-38.png)
+![Image of Maven configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-04-38.png)
