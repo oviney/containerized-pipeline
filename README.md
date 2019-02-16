@@ -240,3 +240,23 @@ pipeline {
     }
 }
 ```
+
+The tool installation thus far was a fairly lenthly process. Imagine if you had dozens of tools in Jenkins, that is what any real Jenkins production system will look like:
+
+> One or more versions of Java
+> A couple versions of NodeJS
+> Maven
+> SonarQube
+> ...
+
+Now you likely have everything working (Jenkins with all the desired tools setup/configured).  Since we have automated this process we can run the automation and the Docker container will be automatically built with all the tools (Java, Maven etc.) setup and configured.
+
+Let’s test it.  By testing it we will make sure it is actually working by creating and running same test pipeline. Oh, wait! Our pipeline is gone, since we delete the container when we stop it.
+
+Let’s make sure next time we destroy the container, jobs aren’t lost. Stop the container, again, create directory jobs in the current directory, and run it with the next command:
+
+````Docker
+docker run -p 8080:8080  -v `pwd`/downloads:/var/jenkins_home/downloads -v `pwd`/jobs:/var/jenkins_home/jobs/ --rm --name myjenkins myjenkins:latest
+```
+
+Now we are saving all jobs in the jobs directory on the host, so next time you destroy the container, it will be there when we run it again.
