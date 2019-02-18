@@ -16,6 +16,12 @@ echo "Start Docker SonarQube container"
 echo "docker run -p %sonar_port%:9000 --rm --name mysonar sonarqube:latest"
 echo "Start Custom Docker Jenkins container, Jenkin plugin auto install, admin password disabled, Java 8, Maven"
 REM docker run -p %jenkins_port%:8080 --rm --name myjenkins -e SONARQUBE_HOST=http://%ip_address%:%sonar_port% myjenkins:latest
-docker run -itd -p %jenkins_port%:8080 --rm --name myjenkins myjenkins:latest
-REM echo "Install Jenkins Plugins"
-REM python jenkins-utils.py
+echo "Create jenkins job dir, if not already present."
+mkdir c:\jenkins\jobs
+REM docker run -itd -p %jenkins_port%:8080 -v c:\jenkins\jobs:/var/jenkins_home/jobs/ --rm --name myjenkins oviney/myjenkins:latest
+docker run -p %jenkins_port%:8080 -v c:\jenkins\jobs:/var/jenkins_home/jobs/ --rm --name myjenkins oviney/myjenkins:latest
+echo "Install Jenkins Plugins"
+python jenkins-utils.py
+echo "Copy Tool Setup Automation Scripts to Container"
+docker cp install_maven.groovy myjenkins:/var/jenkins_home/init.groovy.d
+docker cp install_java.groovy myjenkins:/var/jenkins_home/init.groovy.d

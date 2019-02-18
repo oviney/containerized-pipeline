@@ -1,5 +1,4 @@
 import json
-
 import jenkins
 import requests
 import time
@@ -49,14 +48,14 @@ def restart_jenkins(server):
 
 # print("Sleeping for 1 min to wait for Jenkins to start up for the first time.")
 # time.sleep(60)
-# Get the list of Jenkins plugins to install
+print("Get the list of Jenkins plugins to install")
 # jenkins_plugins = get_plugins_info(server)
-# Install plugins
-# install_jenkins_plugins(server, jenkins_plugins)
-# Restart Jenkins server, required when installing plugins
-# restart_jenkins(server)
-# Force a 30 second sleep to let Jenkins restart gracefully
-# print("Sleeping for 1 min to wait for Jenkins to restart.")
-# time.sleep(60)
+print("Install Jenkins plugins")
+install_jenkins_plugins(server, jenkins_plugins)
+print("Restart Jenkins server, required after installing Jenkins plugins")
+restart_jenkins(server)
+# Force a 60 second sleep to let Jenkins restart gracefully
+print("Sleeping for 1 min to wait for Jenkins to restart.")
+time.sleep(60)
 # List plugins installed in local Jenkins Docker container
 print("Plugins installed in local Jenkins Docker container: {0}".format(list_jenkins_plugins(server)))

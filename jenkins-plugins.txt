@@ -7,6 +7,7 @@ pipeline-github-lib
 pipeline-input-step
 git-client
 subversion
+jdk-tool
 jsch
 email-ext
 structs
