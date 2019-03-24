@@ -246,7 +246,7 @@ pipeline {
 }
 ```
 
-> Check out the Jenkins pipeline syntax ![here](https://jenkins.io/doc/book/pipeline/syntax/).
+> Check out the Jenkins pipeline syntax [here](https://jenkins.io/doc/book/pipeline/syntax/).
 
 The tool installation thus far was a fairly lenthly process. Imagine if you had dozens of tools in Jenkins, that is what any real Jenkins production system will look like:
 
