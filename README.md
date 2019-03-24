@@ -1,6 +1,11 @@
 # Dockerizing Jenkins - Declarative Build Pipeline With SonarQube Analysis
 Dockerizing Jenkins, learn to run Jenkins on Docker, and automate plugin installation, Java and Maven tool configuration, and more.
 
+# Let's talk briefly about what we mean by `Declarative` Pipeline
+A declarative pipeline adds a powerful set of automation tools onto Jenkins, supporting use cases that span from simple continuous integration to comprehensive continuous delivery pipelines. The steps to build, test, and deliver each application become part of the application itself, stored in a Jenkinsfile. 
+
+Jenkins Pipeline execution engine supports two DSL syntaxes: Scripted Pipeline and Declarative Pipeline. Scripted Pipeline allows users to code their Pipelines using a Groovy DSL. Declarative Pipeline replaces Groovy variable assignments, control structures, loops, and exception handling with a predefined structure and model to allow users of all experience levels to quickly create consistent, concise Pipelines without learning Groovy.
+
 # Scope of Tutorial
 In this tutorial, I am going to demonstrate:
 
@@ -207,7 +212,7 @@ We are now ready to configure the tools.  Let open our browser and navigate to h
 
 In the JDK section, we will configure Jenkins to use the Java 8 version we installed in Docker.
 
-![Image of Java configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-04-38.png)      
+![Image of Java configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-10-09.png)      
 
 In the Maven section, we will configure Jenkins to use the Maven version we installed in Docker.
 
@@ -215,7 +220,7 @@ In the Maven section, we will configure Jenkins to use the Maven version we inst
 
 Now we can check if our tools are configured correctly in Jenkins. Let's start by creating a Jenkins job and set up its type to the pipeline and start writing our code:
 
-![Image of Pipeline configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-04-38.png)
+![Image of Pipeline configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-40-40.png)
 
 ```
 pipeline {
@@ -241,22 +246,24 @@ pipeline {
 }
 ```
 
+> Check out the Jenkins pipeline syntax ![here](https://jenkins.io/doc/book/pipeline/syntax/).
+
 The tool installation thus far was a fairly lenthly process. Imagine if you had dozens of tools in Jenkins, that is what any real Jenkins production system will look like:
 
-> One or more versions of Java
-> A couple versions of NodeJS
-> Maven
-> SonarQube
-> ...
+* One or more versions of Java
+* A couple versions of NodeJS
+* Maven
+* SonarQube
+* ...
 
 Now you likely have everything working (Jenkins with all the desired tools setup/configured).  Since we have automated this process we can run the automation and the Docker container will be automatically built with all the tools (Java, Maven etc.) setup and configured.
 
 Let’s test it.  By testing it we will make sure it is actually working by creating and running same test pipeline. Oh, wait! Our pipeline is gone, since we delete the container when we stop it.
 
-Let’s make sure next time we destroy the container, jobs aren’t lost. Stop the container, again, create directory jobs in the current directory, and run it with the next command:
+Let’s make sure next time we destroy the container, jobs aren’t lost. Stop the container and run it.  Example with the next command:
 
 ````Docker
-docker run -p 8080:8080  -v `pwd`/downloads:/var/jenkins_home/downloads -v `pwd`/jobs:/var/jenkins_home/jobs/ --rm --name myjenkins myjenkins:latest
+docker run -p 8080:8080  -v `pwd`c:\temp\downloads:/var/jenkins_home/downloads -v `pwd`c:\jenks\jobs:/var/jenkins_home/jobs/ --rm --name myjenkins myjenkins:latest
 ```
 
 Now we are saving all jobs in the jobs directory on the host, so next time you destroy the container, it will be there when we run it again.

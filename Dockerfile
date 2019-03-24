@@ -35,8 +35,8 @@ COPY jenkins-plugins.txt /usr/share/jenkins/ref/jenkins-plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/jenkins-plugins.txt
 
 # Auto setup of Java and Maven tools
-COPY groovy/install_java.groovy /var/jenkins_home/init.groovy.d
-COPY groovy/install_maven.groovy /var/jenkins_home/init.groovy.d
+COPY groovy/install_java.groovy /var/jenkins_home/init.groovy.d/
+COPY groovy/install_maven.groovy /var/jenkins_home/init.groovy.d/
 
 # COPY jenkins-plugins.txt /tmp
 # COPY jenkins-utils.py /tmp
