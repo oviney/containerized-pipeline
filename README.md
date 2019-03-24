@@ -220,14 +220,14 @@ In the Maven section, we will configure Jenkins to use the Maven version we inst
 
 Now we can check if our tools are configured correctly in Jenkins. Let's start by creating a Jenkins job and set up its type to the pipeline and start writing our code:
 
-![Image of Pipeline configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-02-10_13-40-40.png)
+![Image of Pipeline configuration in Jenkins](https://github.com/oviney/containerized-pipeline/blob/master/2019-03-24_15-35-48.png)
 
 ```
 pipeline {
     agent any
     tools {
-        jdk 'java-8-openjdk-amd64'
-        maven 'Maven'
+        jdk 'jdk8'
+        maven 'maven3'
     }
     stages {
         stage('test java installation') {
