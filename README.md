@@ -263,7 +263,7 @@ Let’s test it.  By testing it we will make sure it is actually working by crea
 Let’s make sure next time we destroy the container, jobs aren’t lost. Stop the container and run it.  Example with the next command:
 
 ```Docker
-docker run -p 8080:8080  -v `pwd`c:\temp\downloads:/var/jenkins_home/downloads -v `pwd`c:\jenks\jobs:/var/jenkins_home/jobs/ --rm --name myjenkins myjenkins:latest
+docker run -p 8080:8080  -v c:\jenks\jobs:/var/jenkins_home/jobs/ --rm --name myjenkins myjenkins:latest
 ```
 
 Now we are saving all jobs in the jobs directory on the host, so next time you destroy the container, it will be there when we run it again.
