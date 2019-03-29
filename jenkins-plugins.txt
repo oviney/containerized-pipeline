@@ -71,3 +71,7 @@ pipeline-graph-analysis
 workflow-multibranch
 workflow-scm-step
 cobertura
+docker-compose-build-step
+docker-plugin
+maven-plugin
+allure-jenkins-plugin

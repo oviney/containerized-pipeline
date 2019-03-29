@@ -13,7 +13,7 @@ USER root
 
 # Install OpenJDK-8
 RUN apt-get update && \
-    apt-get install -y openjdk-8-jdk maven && \
+    apt-get install -y openjdk-8-jdk maven docker-compose docker && \
     # apt-get install -y python python-pip && \ 
     apt-get clean;
 
@@ -37,7 +37,13 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/jenkins-plugins.t
 # Auto setup of Java and Maven tools
 COPY groovy/install_java.groovy /var/jenkins_home/init.groovy.d/
 COPY groovy/install_maven.groovy /var/jenkins_home/init.groovy.d/
+COPY groovy/install_allure.groovy /var/jenkins_home/init.groovy.d/
 
+# Copy in default pipeline sample
+COPY jobs/ /var/jenkins_home/jobs/
+
+# Use python to install the desired Jenkins plugins.  Has now
+# been depracated with a simpler approach.
 # COPY jenkins-plugins.txt /tmp
 # COPY jenkins-utils.py /tmp
 # COPY __init__.py /usr/local/lib/python2.7/dist-packages/jenkins
