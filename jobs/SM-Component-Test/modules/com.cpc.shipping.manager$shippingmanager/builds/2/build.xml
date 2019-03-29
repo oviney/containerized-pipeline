@@ -1,0 +1,55 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.2">
+  <actions>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.springframework.boot:spring-boot-starter-parent:spring-boot-starter-parent-2.1.1.RELEASE.pom</string>
+          <string>acdbc0f46439d57df17658521e84b98c</string>
+        </entry>
+        <entry>
+          <string>com.cpc.shipping.manager:shippingmanager:pom.xml</string>
+          <string>7df7d2e9cf577c198db9c6ec0febd3d8</string>
+        </entry>
+        <entry>
+          <string>org.springframework.boot:spring-boot-dependencies:spring-boot-dependencies-2.1.1.RELEASE.pom</string>
+          <string>dcddc477dff1c5cebf81d57215dbc795</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>com.cpc.shipping.manager</groupId>
+        <artifactId>shippingmanager</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>shippingmanager-1.0-SNAPSHOT.pom</canonicalName>
+        <md5sum>7df7d2e9cf577c198db9c6ec0febd3d8</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+    </hudson.maven.reporters.MavenArtifactRecord>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1553737574075</timestamp>
+  <startTime>1553737601548</startTime>
+  <result>SUCCESS</result>
+  <duration>4423</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/jobs/SM-Component-Test/workspace/mnt/project-code</workspace>
+  <executedMojos class="java.util.concurrent.CopyOnWriteArrayList">
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-clean-plugin</artifactId>
+      <version>3.1.0</version>
+      <goal>clean</goal>
+      <executionId>default-clean</executionId>
+      <duration>3231</duration>
+      <digest>3e45e97b4cf6a084a5bff41b0433d1ed</digest>
+    </hudson.maven.ExecutedMojo>
+  </executedMojos>
+</hudson.maven.MavenBuild>

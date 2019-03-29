@@ -1,0 +1,501 @@
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building service-query 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-data-cassandra/2.1.1.RELEASE/spring-boot-starter-data-cassandra-2.1.1.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra/2.1.1.RELEASE/spring-boot-starter-data-cassandra-2.1.1.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra/2.1.1.RELEASE/spring-boot-starter-data-cassandra-2.1.1.RELEASE.pom (3 KB at 10.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/data/spring-data-cassandra/2.1.3.RELEASE/spring-data-cassandra-2.1.3.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/data/spring-data-cassandra/2.1.3.RELEASE/spring-data-cassandra-2.1.3.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/data/spring-data-cassandra/2.1.3.RELEASE/spring-data-cassandra-2.1.3.RELEASE.pom (6 KB at 21.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/data/spring-data-cassandra-parent/2.1.3.RELEASE/spring-data-cassandra-parent-2.1.3.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/data/spring-data-cassandra-parent/2.1.3.RELEASE/spring-data-cassandra-parent-2.1.3.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/data/spring-data-cassandra-parent/2.1.3.RELEASE/spring-data-cassandra-parent-2.1.3.RELEASE.pom (10 KB at 18.2 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/data/build/spring-data-parent/2.1.3.RELEASE/spring-data-parent-2.1.3.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/data/build/spring-data-parent/2.1.3.RELEASE/spring-data-parent-2.1.3.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/data/build/spring-data-parent/2.1.3.RELEASE/spring-data-parent-2.1.3.RELEASE.pom (29 KB at 49.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.pom (11 KB at 45.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.pom (14 KB at 207.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/datastax/cassandra/cassandra-driver-parent/3.6.0/cassandra-driver-parent-3.6.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/datastax/cassandra/cassandra-driver-parent/3.6.0/cassandra-driver-parent-3.6.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/datastax/cassandra/cassandra-driver-parent/3.6.0/cassandra-driver-parent-3.6.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-parent/3.6.0/cassandra-driver-parent-3.6.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-parent/3.6.0/cassandra-driver-parent-3.6.0.pom (48 KB at 470.0 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.pom (3 KB at 39.2 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-parent/4.1.31.Final/netty-parent-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-parent/4.1.31.Final/netty-parent-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-parent/4.1.31.Final/netty-parent-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-parent/4.1.31.Final/netty-parent-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-parent/4.1.31.Final/netty-parent-4.1.31.Final.pom (54 KB at 407.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.pom (2 KB at 23.3 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.pom (9 KB at 118.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.pom (2 KB at 28.1 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.pom (2 KB at 25.8 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.pom (4 KB at 52.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.pom (8 KB at 121.0 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jffi/1.2.16/jffi-1.2.16.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jffi/1.2.16/jffi-1.2.16.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jffi/1.2.16/jffi-1.2.16.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.16/jffi-1.2.16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.16/jffi-1.2.16.pom (10 KB at 140.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom (2 KB at 27.8 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom (6 KB at 91.0 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom (10 KB at 140.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.pom (3 KB at 34.1 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom (3 KB at 31.8 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom (3 KB at 34.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.pom (3 KB at 34.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.pom (2 KB at 23.3 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.pom (7 KB at 105.0 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.pom (4 KB at 55.8 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-data-cassandra-reactive/2.1.1.RELEASE/spring-boot-starter-data-cassandra-reactive-2.1.1.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra-reactive/2.1.1.RELEASE/spring-boot-starter-data-cassandra-reactive-2.1.1.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra-reactive/2.1.1.RELEASE/spring-boot-starter-data-cassandra-reactive-2.1.1.RELEASE.pom (3 KB at 12.1 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/google/guava/guava/19.0/guava-19.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/google/guava/guava/19.0/guava-19.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/guava/guava/19.0/guava-19.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom (7 KB at 103.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom (10 KB at 141.8 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.pom (3 KB at 49.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom (2 KB at 18.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-webflux/2.1.1.RELEASE/spring-boot-starter-webflux-2.1.1.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-webflux/2.1.1.RELEASE/spring-boot-starter-webflux-2.1.1.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-webflux/2.1.1.RELEASE/spring-boot-starter-webflux-2.1.1.RELEASE.pom (4 KB at 14.0 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.pom (4 KB at 13.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.pom (4 KB at 56.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.1.RELEASE/spring-boot-starter-reactor-netty-2.1.1.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.1.RELEASE/spring-boot-starter-reactor-netty-2.1.1.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.1.RELEASE/spring-boot-starter-reactor-netty-2.1.1.RELEASE.pom (3 KB at 8.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.pom (5 KB at 77.4 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.pom (2 KB at 28.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.pom (2 KB at 31.4 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.pom (3 KB at 37.3 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.pom (2 KB at 18.5 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final.pom (15 KB at 210.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.pom (16 KB at 200.8 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.pom (15 KB at 217.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/hibernate/validator/hibernate-validator-parent/6.0.13.Final/hibernate-validator-parent-6.0.13.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/hibernate/validator/hibernate-validator-parent/6.0.13.Final/hibernate-validator-parent-6.0.13.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/hibernate/validator/hibernate-validator-parent/6.0.13.Final/hibernate-validator-parent-6.0.13.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator-parent/6.0.13.Final/hibernate-validator-parent-6.0.13.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator-parent/6.0.13.Final/hibernate-validator-parent-6.0.13.Final.pom (59 KB at 435.3 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom (11 KB at 164.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom (4 KB at 59.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom (6 KB at 86.3 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom (6 KB at 74.2 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom (12 KB at 190.3 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.pom (7 KB at 105.1 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/jboss/jboss-parent/15/jboss-parent-15.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/jboss/jboss-parent/15/jboss-parent-15.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jboss/jboss-parent/15/jboss-parent-15.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom (31 KB at 310.9 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/fasterxml/classmate/1.4.0/classmate-1.4.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/fasterxml/classmate/1.4.0/classmate-1.4.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/classmate/1.4.0/classmate-1.4.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.4.0/classmate-1.4.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.4.0/classmate-1.4.0.pom (6 KB at 91.2 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloading: http://repo.spring.io/milestone/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom (19 KB at 279.1 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/spring-webflux/5.1.3.RELEASE/spring-webflux-5.1.3.RELEASE.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/spring-webflux/5.1.3.RELEASE/spring-webflux-5.1.3.RELEASE.pom
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/spring-webflux/5.1.3.RELEASE/spring-webflux-5.1.3.RELEASE.pom (7 KB at 29.6 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.pom (4 KB at 51.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/synchronoss/cloud/nio-multipart/1.1.0/nio-multipart-1.1.0.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/synchronoss/cloud/nio-multipart/1.1.0/nio-multipart-1.1.0.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/synchronoss/cloud/nio-multipart/1.1.0/nio-multipart-1.1.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-multipart/1.1.0/nio-multipart-1.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-multipart/1.1.0/nio-multipart-1.1.0.pom (12 KB at 182.2 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.pom
+[INFO] Downloading: http://repo.spring.io/milestone/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.pom (11 KB at 170.7 KB/sec)
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-data-cassandra/2.1.1.RELEASE/spring-boot-starter-data-cassandra-2.1.1.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/data/spring-data-cassandra/2.1.3.RELEASE/spring-data-cassandra-2.1.3.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jffi/1.2.16/jffi-1.2.16.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jffi/1.2.16/jffi-1.2.16-native.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-data-cassandra-reactive/2.1.1.RELEASE/spring-boot-starter-data-cassandra-reactive-2.1.1.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-webflux/2.1.1.RELEASE/spring-boot-starter-webflux-2.1.1.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.1.RELEASE/spring-boot-starter-reactor-netty-2.1.1.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/springframework/spring-webflux/5.1.3.RELEASE/spring-webflux-5.1.3.RELEASE.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar
+[INFO] Downloading: http://devtools.cpggpc.ca/nexus/repository/maven-public/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/data/spring-data-cassandra/2.1.3.RELEASE/spring-data-cassandra-2.1.3.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra/2.1.1.RELEASE/spring-boot-starter-data-cassandra-2.1.1.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra/2.1.1.RELEASE/spring-boot-starter-data-cassandra-2.1.1.RELEASE.jar (430 B at 1.4 KB/sec)
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jffi/1.2.16/jffi-1.2.16.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jffi/1.2.16/jffi-1.2.16-native.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/data/spring-data-cassandra/2.1.3.RELEASE/spring-data-cassandra-2.1.3.RELEASE.jar (841 KB at 1021.0 KB/sec)
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra-reactive/2.1.1.RELEASE/spring-boot-starter-data-cassandra-reactive-2.1.1.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-webflux/2.1.1.RELEASE/spring-boot-starter-webflux-2.1.1.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-data-cassandra-reactive/2.1.1.RELEASE/spring-boot-starter-data-cassandra-reactive-2.1.1.RELEASE.jar (443 B at 0.3 KB/sec)
+[INFO] Downloading: http://repo.spring.io/milestone/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar (1136 KB at 820.9 KB/sec)
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.1.RELEASE/spring-boot-starter-reactor-netty-2.1.1.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.jar
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-webflux/2.1.1.RELEASE/spring-boot-starter-webflux-2.1.1.RELEASE.jar (428 B at 0.3 KB/sec)
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.jar
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar (421 B at 0.3 KB/sec)
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+[INFO] Downloading: http://repo.spring.io/milestone/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/springframework/spring-webflux/5.1.3.RELEASE/spring-webflux-5.1.3.RELEASE.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar
+[INFO] Downloading: http://repo.spring.io/milestone/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.1.RELEASE/spring-boot-starter-reactor-netty-2.1.1.RELEASE.jar (430 B at 0.2 KB/sec)
+[INFO] Downloaded: http://repo.spring.io/milestone/org/springframework/spring-webflux/5.1.3.RELEASE/spring-webflux-5.1.3.RELEASE.jar (719 KB at 281.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jffi/1.2.16/jffi-1.2.16.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jffi/1.2.16/jffi-1.2.16-native.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar (33 KB at 258.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar (410 KB at 1058.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar (453 KB at 1009.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.16/jffi-1.2.16.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar (267 KB at 429.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.16/jffi-1.2.16-native.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.16/jffi-1.2.16.jar (148 KB at 237.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar (310 KB at 436.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar (52 KB at 69.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar (20 KB at 24.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar (41 KB at 48.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar (29 KB at 31.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar (43 KB at 43.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.jar (666 KB at 636.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar (215 KB at 184.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.jar (351 KB at 256.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar (3 KB at 1.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar (9 KB at 5.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.jar (235 KB at 157.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.6.0/cassandra-driver-core-3.6.0.jar (1108 KB at 711.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/jnr/jffi/1.2.16/jffi-1.2.16-native.jar (649 KB at 331.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.jar (551 KB at 278.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.jar (21 KB at 10.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.jar (117 KB at 54.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.jar (395 KB at 166.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/projectreactor/netty/reactor-netty/0.8.3.RELEASE/reactor-netty-0.8.3.RELEASE.jar (403 KB at 168.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar (138 KB at 57.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar (1409 KB at 573.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.jar (33 KB at 13.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar (65 KB at 25.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar (91 KB at 35.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar (65 KB at 24.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar (13 KB at 4.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar (55 KB at 20.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar (573 KB at 201.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar (1129 KB at 324.7 KB/sec)
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ service-query ---
+[INFO] Deleting /mnt/project-code/service-query/target
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ service-query ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /mnt/project-code/service-query/src/main/resources
+[INFO] skip non existing resourceDirectory /mnt/project-code/service-query/src/main/resources
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ service-query ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /mnt/project-code/service-query/target/classes
+[INFO] /mnt/project-code/service-query/target/generated-sources/annotations/com/cpc/shipping/manager/query/event/domain/_EventType_DslJsonConverter.java: Some input files use unchecked or unsafe operations.
+[INFO] /mnt/project-code/service-query/target/generated-sources/annotations/com/cpc/shipping/manager/query/event/domain/_EventType_DslJsonConverter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ service-query ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ service-query ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /mnt/project-code/service-query/target/test-classes
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ service-query ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+01:49:45.121 [main] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+4
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.879 sec - in TestSuite
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results

@@ -1,0 +1,40 @@
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building service-event 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ service-event ---
+[INFO] Deleting /mnt/project-code/service-event/target
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ service-event ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /mnt/project-code/service-event/src/main/resources
+[INFO] skip non existing resourceDirectory /mnt/project-code/service-event/src/main/resources
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ service-event ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /mnt/project-code/service-event/target/classes
+[INFO] /mnt/project-code/service-event/target/generated-sources/annotations/com/cpc/shipping/manager/domain/_EventType_DslJsonConverter.java: Some input files use unchecked or unsafe operations.
+[INFO] /mnt/project-code/service-event/target/generated-sources/annotations/com/cpc/shipping/manager/domain/_EventType_DslJsonConverter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ service-event ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ service-event ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /mnt/project-code/service-event/target/test-classes
+[INFO] 
+[8mha:////4HDjp9jIvtwnXlu6by7yWtGmp+zwiGNQlxJiiIkZtFg0AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ service-event ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.587 sec - in TestSuite
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results

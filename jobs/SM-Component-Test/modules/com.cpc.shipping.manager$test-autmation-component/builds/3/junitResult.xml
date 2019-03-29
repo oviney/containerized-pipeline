@@ -1,0 +1,220 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.27">
+  <suites>
+    <suite>
+      <file>/mnt/project-code/test-automation-component/target/surefire-reports/TEST-TestSuite.xml</file>
+      <name>TestSuite</name>
+      <duration>60.343</duration>
+      <time>60.343</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>60.343</duration>
+          <className>testcases.InductionTest</className>
+          <testName>postInduction</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.TimeoutException: Topic com.cpc.ep.smadapter.induction not present in metadata after 60000 ms. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at common.KafkaProducerConfig.sender(KafkaProducerConfig.java:31)
+	at testcases.InductionTest.postInduction(InductionTest.java:49)
+</errorStackTrace>
+          <errorDetails>java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.TimeoutException: Topic com.cpc.ep.smadapter.induction not present in metadata after 60000 ms. expected [true] but found [false]</errorDetails>
+          <stdout> trxId is : 5785773553883359and  requestXmlContent: {        &quot;pin&quot;: &quot;5785773553883359&quot;,        &quot;inductionDateTime&quot;: &quot;2019-02-22T10:18:10-05:00&quot;,        &quot;article&quot;: &quot;000000000000000966&quot;,        &quot;returnArticle&quot;: null,        &quot;outletId&quot;: &quot;231983&quot;,        &quot;mailerNumber&quot;: &quot;0007023210&quot;,        &quot;behalfOfNumber&quot;: &quot;0007023210&quot;,        &quot;destFsa&quot;: &quot;K1V&quot;,        &quot;destLdu&quot;: &quot;1J8&quot;,        &quot;taxId&quot;: null,        &quot;receiverAddress&quot;: {                &quot;name1&quot;: &quot;Jerrard Jones&quot;,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: &quot;78 Hill St&quot;,                &quot;addressLine2&quot;: null,                &quot;city&quot;: &quot;Ottawa&quot;,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: null,                &quot;country&quot;: &quot;CA&quot;,                &quot;telephone&quot;: null,                &quot;county&quot;: null        },        &quot;actualRecipientAddress&quot;: null,        &quot;senderAddress&quot;: {                &quot;name1&quot;: &quot;IIQA CUST DO NOT USE - 005&quot;,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: &quot;10 SAINTE-CATHERINE ST E&quot;,                &quot;addressLine2&quot;: null,                &quot;city&quot;: &quot;MONTREAL&quot;,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: &quot;test@test.sdkfbksdhgjkshdkjfhjksdhjkfhjskjkfsdhjjksfsdhjsjksjkfsdfsdfs\n            &quot;,                &quot;country&quot;: &quot;CA&quot;,                &quot;telephone&quot;: &quot;613-734-7708&quot;,                &quot;county&quot;: null        },        &quot;returnAddress&quot;: null,        &quot;behalfOfAddress&quot;: {                &quot;name1&quot;: null,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: null,                &quot;addressLine2&quot;: null,                &quot;city&quot;: null,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: &quot;test@test.sdkfbksdhgjkshdkjfhjksdhjkfhjskjkfsdhjjksfsdhjsjksjkfsdfsdfs\n            &quot;,                &quot;country&quot;: null,                &quot;telephone&quot;: null,                &quot;county&quot;: null        },        &quot;receiverEmail2&quot;: null,        &quot;receiverIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;receiver2Indicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;emailSubject&quot;: &quot;TRACKING 7023210074747118&quot;,        &quot;emailTxt&quot;: null,        &quot;returnEmail2&quot;: null,        &quot;country&quot;: null,        &quot;preTaxAmount&quot;: null,        &quot;senderIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;behalfOfEmail&quot;: null,        &quot;behalfIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;deliverToPostOfficeId&quot;: null,        &quot;deliveryOptions&quot;: [                {                        &quot;code&quot;: &quot;CH_SGN_OPTION&quot;,                        &quot;value&quot;: null                },                {                        &quot;code&quot;: &quot;CH_DEL_CONFIRM&quot;,                        &quot;value&quot;: null                }        ],        &quot;poNumber&quot;: null,        &quot;customerRef1&quot;: null,        &quot;weight&quot;: 0.5,        &quot;length&quot;: null,        &quot;height&quot;: null,        &quot;width&quot;: null,        &quot;eventType&quot;: &quot;3000&quot;,        &quot;sourceSystemCode&quot;: &quot;EST&quot;,        &quot;sourceSystemDescription&quot;: &quot;ELECTRONIC SHIPPING TOOLS&quot;,        &quot;eventId&quot;: &quot;e3c2d0da-452c-4403-8405-a7b6092cc16a&quot;}
+the xml input is :{        &quot;pin&quot;: &quot;5785773553883359&quot;,        &quot;inductionDateTime&quot;: &quot;2019-02-22T10:18:10-05:00&quot;,        &quot;article&quot;: &quot;000000000000000966&quot;,        &quot;returnArticle&quot;: null,        &quot;outletId&quot;: &quot;231983&quot;,        &quot;mailerNumber&quot;: &quot;0007023210&quot;,        &quot;behalfOfNumber&quot;: &quot;0007023210&quot;,        &quot;destFsa&quot;: &quot;K1V&quot;,        &quot;destLdu&quot;: &quot;1J8&quot;,        &quot;taxId&quot;: null,        &quot;receiverAddress&quot;: {                &quot;name1&quot;: &quot;Jerrard Jones&quot;,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: &quot;78 Hill St&quot;,                &quot;addressLine2&quot;: null,                &quot;city&quot;: &quot;Ottawa&quot;,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: null,                &quot;country&quot;: &quot;CA&quot;,                &quot;telephone&quot;: null,                &quot;county&quot;: null        },        &quot;actualRecipientAddress&quot;: null,        &quot;senderAddress&quot;: {                &quot;name1&quot;: &quot;IIQA CUST DO NOT USE - 005&quot;,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: &quot;10 SAINTE-CATHERINE ST E&quot;,                &quot;addressLine2&quot;: null,                &quot;city&quot;: &quot;MONTREAL&quot;,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: &quot;test@test.sdkfbksdhgjkshdkjfhjksdhjkfhjskjkfsdhjjksfsdhjsjksjkfsdfsdfs\n            &quot;,                &quot;country&quot;: &quot;CA&quot;,                &quot;telephone&quot;: &quot;613-734-7708&quot;,                &quot;county&quot;: null        },        &quot;returnAddress&quot;: null,        &quot;behalfOfAddress&quot;: {                &quot;name1&quot;: null,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: null,                &quot;addressLine2&quot;: null,                &quot;city&quot;: null,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: &quot;test@test.sdkfbksdhgjkshdkjfhjksdhjkfhjskjkfsdhjjksfsdhjsjksjkfsdfsdfs\n            &quot;,                &quot;country&quot;: null,                &quot;telephone&quot;: null,                &quot;county&quot;: null        },        &quot;receiverEmail2&quot;: null,        &quot;receiverIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;receiver2Indicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;emailSubject&quot;: &quot;TRACKING 7023210074747118&quot;,        &quot;emailTxt&quot;: null,        &quot;returnEmail2&quot;: null,        &quot;country&quot;: null,        &quot;preTaxAmount&quot;: null,        &quot;senderIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;behalfOfEmail&quot;: null,        &quot;behalfIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;deliverToPostOfficeId&quot;: null,        &quot;deliveryOptions&quot;: [                {                        &quot;code&quot;: &quot;CH_SGN_OPTION&quot;,                        &quot;value&quot;: null                },                {                        &quot;code&quot;: &quot;CH_DEL_CONFIRM&quot;,                        &quot;value&quot;: null                }        ],        &quot;poNumber&quot;: null,        &quot;customerRef1&quot;: null,        &quot;weight&quot;: 0.5,        &quot;length&quot;: null,        &quot;height&quot;: null,        &quot;width&quot;: null,        &quot;eventType&quot;: &quot;3000&quot;,        &quot;sourceSystemCode&quot;: &quot;EST&quot;,        &quot;sourceSystemDescription&quot;: &quot;ELECTRONIC SHIPPING TOOLS&quot;,        &quot;eventId&quot;: &quot;e3c2d0da-452c-4403-8405-a7b6092cc16a&quot;}
+JSON as string value is : {        &quot;pin&quot;: &quot;5785773553883359&quot;,        &quot;inductionDateTime&quot;: &quot;2019-02-22T10:18:10-05:00&quot;,        &quot;article&quot;: &quot;000000000000000966&quot;,        &quot;returnArticle&quot;: null,        &quot;outletId&quot;: &quot;231983&quot;,        &quot;mailerNumber&quot;: &quot;0007023210&quot;,        &quot;behalfOfNumber&quot;: &quot;0007023210&quot;,        &quot;destFsa&quot;: &quot;K1V&quot;,        &quot;destLdu&quot;: &quot;1J8&quot;,        &quot;taxId&quot;: null,        &quot;receiverAddress&quot;: {                &quot;name1&quot;: &quot;Jerrard Jones&quot;,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: &quot;78 Hill St&quot;,                &quot;addressLine2&quot;: null,                &quot;city&quot;: &quot;Ottawa&quot;,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: null,                &quot;country&quot;: &quot;CA&quot;,                &quot;telephone&quot;: null,                &quot;county&quot;: null        },        &quot;actualRecipientAddress&quot;: null,        &quot;senderAddress&quot;: {                &quot;name1&quot;: &quot;IIQA CUST DO NOT USE - 005&quot;,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: &quot;10 SAINTE-CATHERINE ST E&quot;,                &quot;addressLine2&quot;: null,                &quot;city&quot;: &quot;MONTREAL&quot;,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: &quot;test@test.sdkfbksdhgjkshdkjfhjksdhjkfhjskjkfsdhjjksfsdhjsjksjkfsdfsdfs\n            &quot;,                &quot;country&quot;: &quot;CA&quot;,                &quot;telephone&quot;: &quot;613-734-7708&quot;,                &quot;county&quot;: null        },        &quot;returnAddress&quot;: null,        &quot;behalfOfAddress&quot;: {                &quot;name1&quot;: null,                &quot;name2&quot;: null,                &quot;name3&quot;: null,                &quot;name4&quot;: &quot;EMAIL SELECTION YYY EST-D&quot;,                &quot;addressLine1&quot;: null,                &quot;addressLine2&quot;: null,                &quot;city&quot;: null,                &quot;province&quot;: null,                &quot;postZipCode&quot;: null,                &quot;email&quot;: &quot;test@test.sdkfbksdhgjkshdkjfhjksdhjkfhjskjkfsdhjjksfsdhjsjksjkfsdfsdfs\n            &quot;,                &quot;country&quot;: null,                &quot;telephone&quot;: null,                &quot;county&quot;: null        },        &quot;receiverEmail2&quot;: null,        &quot;receiverIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;receiver2Indicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;emailSubject&quot;: &quot;TRACKING 7023210074747118&quot;,        &quot;emailTxt&quot;: null,        &quot;returnEmail2&quot;: null,        &quot;country&quot;: null,        &quot;preTaxAmount&quot;: null,        &quot;senderIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;behalfOfEmail&quot;: null,        &quot;behalfIndicators&quot;: [                &quot;ON_SHIPMENT&quot;,                &quot;ON_EXCEPTION&quot;,                &quot;ON_DELIVERY&quot;        ],        &quot;deliverToPostOfficeId&quot;: null,        &quot;deliveryOptions&quot;: [                {                        &quot;code&quot;: &quot;CH_SGN_OPTION&quot;,                        &quot;value&quot;: null                },                {                        &quot;code&quot;: &quot;CH_DEL_CONFIRM&quot;,                        &quot;value&quot;: null                }        ],        &quot;poNumber&quot;: null,        &quot;customerRef1&quot;: null,        &quot;weight&quot;: 0.5,        &quot;length&quot;: null,        &quot;height&quot;: null,        &quot;width&quot;: null,        &quot;eventType&quot;: &quot;3000&quot;,        &quot;sourceSystemCode&quot;: &quot;EST&quot;,        &quot;sourceSystemDescription&quot;: &quot;ELECTRONIC SHIPPING TOOLS&quot;,        &quot;eventId&quot;: &quot;e3c2d0da-452c-4403-8405-a7b6092cc16a&quot;}
+Producer failed with an exceptionjava.util.concurrent.ExecutionException: org.apache.kafka.common.errors.TimeoutException: Topic com.cpc.ep.smadapter.induction not present in metadata after 60000 ms.
+</stdout>
+          <stderr>[main] INFO org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.1.1
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : 21234bee31165527
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[kafka-producer-network-thread | producer-1] WARN org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.TimeoutException: Topic com.cpc.ep.smadapter.induction not present in metadata after 60000 ms.
+	at org.apache.kafka.clients.producer.KafkaProducer$FutureFailure.&lt;init&gt;(KafkaProducer.java:1255)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:916)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:839)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:726)
+	at common.KafkaProducerConfig.sender(KafkaProducerConfig.java:25)
+	at testcases.InductionTest.postInduction(InductionTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Topic com.cpc.ep.smadapter.induction not present in metadata after 60000 ms.
+[main] INFO org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+</stderr>
+          <failedSince>3</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>testcases.InductionTest</className>
+          <testName>GetInduction</testName>
+          <skipped>true</skipped>
+          <skippedMessage></skippedMessage>
+          <failedSince>3</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>testcases.InductionTest</className>
+          <testName>MessageFromSMToExternalSystems</testName>
+          <skipped>true</skipped>
+          <skippedMessage></skippedMessage>
+          <failedSince>3</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>60.343</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>
