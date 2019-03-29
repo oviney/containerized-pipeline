@@ -75,3 +75,4 @@ docker-compose-build-step
 docker-plugin
 maven-plugin
 allure-jenkins-plugin
+performance
