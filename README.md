@@ -267,3 +267,5 @@ docker run -p 8080:8080  -v c:\jenks\jobs:/var/jenkins_home/jobs/ --rm --name my
 ```
 
 Now we are saving all jobs in the jobs directory on the host, so next time you destroy the container, it will be there when we run it again.
+
+Please note:  The remainder of the tutorial is being worked on and will be added shortly.  
